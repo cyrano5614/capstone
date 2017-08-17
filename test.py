@@ -6,9 +6,8 @@ from skimage.feature import hog
 from imgaug import augmenters as iaa
 
 
-dude = '/home/cyrano5614/Documents/webcam/dude.jpg'
-hand = '/home/cyrano5614/Documents/webcam/hands.jpg'
-
+dude = './images/dude.jpg'
+hand = './images/hands.jpg'
 
 def preprocess(image):
 
@@ -70,4 +69,4 @@ def plot_images(images):
 def visualize(img_path):
     plot_images(augmentation(preprocess(img_path)))
 
-# visualize('/home/cyrano5614/Documents/webcam/dude.jpg')
+visualize(hand)
